@@ -6,6 +6,8 @@
   --muted: #aba8a7;
   --accent: #e1663f;
   --accent-foreground: #ffffff;
+  --border: rgba(255, 255, 255, 0.1);
+  --background-alt: #242322;
 }
 
 @theme inline {
@@ -14,12 +16,42 @@
   --color-muted: var(--muted);
   --color-accent: var(--accent);
   --color-accent-foreground: var(--accent-foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-border: var(--border);
+  --color-background-alt: var(--background-alt);
+  --font-sans: var(--font-sans);
+  --font-mono: var(--font-mono);
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans), Arial, Helvetica, sans-serif;
+  font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+}
+
+::selection {
+  background: var(--accent);
+  color: var(--accent-foreground);
+}
+
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+.dot-grid {
+  background-image: radial-gradient(
+    rgba(255, 255, 255, 0.14) 1px,
+    transparent 1px
+  );
+  background-size: 22px 22px;
+  mask-image: radial-gradient(
+    ellipse 60% 50% at 50% 0%,
+    black 40%,
+    transparent 100%
+  );
 }
