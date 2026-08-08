@@ -5,7 +5,7 @@ Positioning against AgentsKit: small, honest, quality-first curated set — not 
 
 ## Shipped (v1)
 
-**Agents** (`agentkit/agents/`)
+**Agents** (`agentkit/agents/`) — 12
 - `tech-lead` — orchestrator, delegates and gates completion
 - `backend-architect` — API/schema design, boring-tech bias
 - `react-specialist` — React/Next.js UI, matches existing component patterns
@@ -13,16 +13,24 @@ Positioning against AgentsKit: small, honest, quality-first curated set — not 
 - `debugger` — reproduce → isolate → hypothesis → verify → check for recurrence
 - `test-automator` — tests that catch regressions, risk-prioritized, not coverage-padding
 - `security-auditor` — OWASP-grounded, severity-ranked, exploit-scenario findings
+- `typescript-pro` — type system used to make invalid states unrepresentable
+- `postgres-pro` — schema/indexing/query performance, safe migrations on live tables
 - `growth-strategist` — finds the funnel's binding constraint before recommending action
 - `content-marketer` — one true, specific claim per piece of copy
+- `seo-specialist` — optimizes for search intent, fixes crawlability before content
 
-**Skills** (`agentkit/skills/`)
+**Skills** (`agentkit/skills/`) — 2
 - `api-scaffold` — matches existing codebase conventions instead of imposing new architecture
+- `tdd-workflow` — red/green/refactor, one failing test at a time
 
-**Commands** (`agentkit/commands/`)
+**Commands** (`agentkit/commands/`) — 3
 - `/deploy-checklist` — build/tests/secrets/migrations/security gate before shipping
 - `/test-coverage` — highest-risk untested paths in recent changes, ranked
 - `/launch-plan` — claim, channels, assets, sequencing, success metric
+
+Naming validated against [wshobson/agents](https://github.com/wshobson/agents) and
+[VoltAgent/awesome-claude-code-subagents](https://github.com/VoltAgent/awesome-claude-code-subagents)
+(see `CREDITS.md`) — our names match ecosystem convention, our prompts are original and more specific than the padded-count competitors.
 
 **Site** (`agentkit/web/`) — Next.js landing page: hero, "curated not collected," two-kit split, full agent/skill/command listing, install instructions. Dark theme (`#1F1F1F` bg / white text / `#ABA8A7` paragraph / `#E1663F` accent), Inter + JetBrains Mono.
 
@@ -31,18 +39,15 @@ Positioning against AgentsKit: small, honest, quality-first curated set — not 
 Each one only gets built when it earns its place with a real, specific system prompt — not added just to move a counter. Roughly ordered by how often the gap actually shows up.
 
 **Engineer kit**
-- `typescript-pro` — type-level correctness, avoiding `any`-as-escape-hatch, generic design
 - `python-pro` — idiomatic Python, typing, packaging conventions
-- `postgres-pro` — schema/index/query tuning, migration safety on a live table
 - `docker-specialist` — multi-stage builds, image size, layer caching
 - `ci-engineer` — pipeline design, what to gate on, flaky-test triage
 - `refactorer` — behavior-preserving structural cleanup, distinct from `code-reviewer`'s bug-hunting
 - `performance-profiler` — measures before optimizing, flags premature optimization
 - `accessibility-auditor` — WCAG-grounded, concrete assistive-tech failure scenarios (pairs with `react-specialist` the way `security-auditor` pairs with `backend-architect`)
-- `db-migrator` — zero-downtime migration sequencing on a live schema
+- `architect-reviewer` — reviews a design/tradeoff decision before it's built, distinct from `code-reviewer`'s post-hoc diff review
 
 **Marketing kit**
-- `seo-specialist` — technical + content SEO, grounded in actual search intent, not keyword stuffing
 - `brand-voice` — keeps copy consistent with an established voice, legally clean claims
 - `competitive-analyst` — factual competitor comparison, no unverifiable claims about competitors
 

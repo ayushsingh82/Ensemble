@@ -47,6 +47,18 @@ const AGENTS: Item[] = [
       "OWASP-grounded pre-ship audit. Findings ranked by severity, each with a concrete exploit scenario.",
   },
   {
+    name: "typescript-pro",
+    kit: "engineer",
+    blurb:
+      "Uses the type system to make invalid states unrepresentable. Treats `any` and `as` as red flags, not defaults.",
+  },
+  {
+    name: "postgres-pro",
+    kit: "engineer",
+    blurb:
+      "Schema, indexing, and query performance. Indexes justified by a real query pattern, migrations safe on a live table.",
+  },
+  {
     name: "growth-strategist",
     kit: "marketing",
     blurb:
@@ -58,6 +70,12 @@ const AGENTS: Item[] = [
     blurb:
       "Writes launch copy that says one true, specific thing well instead of many vague things at once.",
   },
+  {
+    name: "seo-specialist",
+    kit: "marketing",
+    blurb:
+      "Optimizes for search intent, not keyword density. Fixes crawlability blockers before touching content.",
+  },
 ];
 
 const SKILLS: Item[] = [
@@ -66,6 +84,12 @@ const SKILLS: Item[] = [
     kit: "engineer",
     blurb:
       "Generates a new endpoint that matches your existing codebase's conventions instead of imposing new architecture.",
+  },
+  {
+    name: "tdd-workflow",
+    kit: "engineer",
+    blurb:
+      "Red, green, refactor. One failing test at a time, minimum code to pass it, refactor only once green.",
   },
 ];
 
