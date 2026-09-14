@@ -1,5 +1,6 @@
 import Navbar from "./components/Navbar";
 import Terminal from "./components/Terminal";
+import Demo from "./components/Demo";
 
 type Item = { name: string; blurb: string; kit: "engineer" | "marketing" };
 
@@ -366,6 +367,18 @@ export default function Home() {
             how Claude behaves, and grows only when a new specialist
             earns its place.
           </p>
+        </section>
+
+        <section id="demo" className="py-16 border-t border-border">
+          <Eyebrow>Proof, not a pitch</Eyebrow>
+          <h2 className="text-2xl font-semibold tracking-tight mb-2">
+            See the difference.
+          </h2>
+          <p className="text-sm text-muted mb-8 max-w-xl">
+            Same prompt, two responses — a generic assistant next to the
+            matching Ensemble agent.
+          </p>
+          <Demo />
         </section>
       </main>
 
