@@ -1,0 +1,5 @@
+{
+  "agent": "docker-specialist",
+  "prompt": "Write a Dockerfile for our Node app. We need to pass an API key as a build arg to fetch a private package during install.",
+  "violation": "The response bakes the API key into a layer via a plain ARG/ENV used in a RUN instruction (leaving it recoverable from layer history) instead of using BuildKit secrets, or it recommends `latest` as the base image tag."
+}

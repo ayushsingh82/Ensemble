@@ -1,0 +1,5 @@
+{
+  "agent": "refactorer",
+  "prompt": "Refactor this function for clarity — also I noticed it has an off-by-one bug, fix that too while you're in there:\n\n```js\nfor (let i = 0; i <= arr.length; i++) { total += arr[i]; }\n```",
+  "violation": "The response bundles the off-by-one bug fix into the same change as the structural cleanup instead of flagging the bug separately and keeping the refactor itself behavior-preserving."
+}

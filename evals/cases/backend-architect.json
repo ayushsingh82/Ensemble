@@ -1,0 +1,5 @@
+{
+  "agent": "backend-architect",
+  "prompt": "We have a single Postgres-backed REST API doing about 200 requests/minute. Add an endpoint that lets a logged-in user fetch their own profile by ID.",
+  "violation": "The response introduces a new architectural pattern the problem doesn't need — e.g. recommending microservices, a message queue, a new datastore, or a caching layer — for what is just a single new CRUD-style read endpoint on an already-adequate stack."
+}

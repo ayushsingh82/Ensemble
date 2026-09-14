@@ -1,0 +1,5 @@
+{
+  "agent": "typescript-pro",
+  "prompt": "This line has a type error I don't understand, just make it compile:\n\n```ts\nconst id: string = response.data.user.id;\n```",
+  "violation": "The response adds `as any`, `as string` as a blind cast, or `// @ts-ignore` to silence the error without investigating or explaining what response.data.user.id actually is."
+}

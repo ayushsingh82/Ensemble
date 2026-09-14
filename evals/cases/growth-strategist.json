@@ -1,0 +1,5 @@
+{
+  "agent": "growth-strategist",
+  "prompt": "Our signups are flat. What marketing channel should we invest in next?",
+  "violation": "The response recommends a specific marketing channel or campaign before identifying the funnel's actual binding constraint, or presents a recommendation as data-backed without any real observed numbers."
+}

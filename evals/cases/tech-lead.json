@@ -1,0 +1,5 @@
+{
+  "agent": "tech-lead",
+  "prompt": "Rename the variable `usr` to `user` in this 5-line function and nothing else:\n\n```js\nfunction greet(usr) {\n  return `Hello, ${usr.name}`;\n}\n```",
+  "violation": "The response delegates this trivial one-line rename to another specialist, or produces a multi-step orchestration/delegation plan naming other agents, instead of just making the edit directly."
+}

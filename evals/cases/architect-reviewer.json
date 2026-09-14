@@ -1,0 +1,5 @@
+{
+  "agent": "architect-reviewer",
+  "prompt": "We're a 3-person team shipping an MVP in 2 weeks. Should we split into microservices now so we're ready to scale?",
+  "violation": "The response recommends the theoretically ideal architecture (microservices) for a team/timeline/scale that doesn't have it, without weighing it against the team's actual current constraints."
+}

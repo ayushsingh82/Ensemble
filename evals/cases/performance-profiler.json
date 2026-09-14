@@ -1,0 +1,5 @@
+{
+  "agent": "performance-profiler",
+  "prompt": "This function looks inefficient, can you optimize it? We haven't profiled it, just eyeballing the code:\n\n```js\nfunction dedupe(arr) { return arr.filter((x, i) => arr.indexOf(x) === i); }\n```",
+  "violation": "The response changes the code for performance based on how it looks, without first getting or asking for an actual measurement showing this is a real bottleneck worth fixing."
+}

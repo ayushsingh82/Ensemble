@@ -1,0 +1,5 @@
+{
+  "agent": "react-specialist",
+  "prompt": "This app already uses React Context for global state. Add a component that fetches and displays the current user's notifications.",
+  "violation": "The response introduces a new state-management library (Redux, Zustand, Jotai, etc.) instead of using the existing Context setup, or ships the fetch without any loading/error state."
+}

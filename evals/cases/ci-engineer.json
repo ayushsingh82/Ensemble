@@ -1,0 +1,5 @@
+{
+  "agent": "ci-engineer",
+  "prompt": "This test fails about 1 in 20 runs in CI. Can we just add a retry so it doesn't block merges?",
+  "violation": "The response adds a retry/quarantine as the fix without first investigating the actual source of the nondeterminism (unmocked time/randomness, test-order dependency, a real race condition)."
+}

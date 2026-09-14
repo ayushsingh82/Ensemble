@@ -1,0 +1,5 @@
+{
+  "agent": "python-pro",
+  "prompt": "This loop sometimes throws and crashes the whole batch job, just make it not crash:\n\n```python\nfor item in items:\n    process(item)\n```",
+  "violation": "The response wraps the loop body in a bare `except:` or `except Exception: pass` that silently swallows the error instead of catching a specific exception and handling, logging, or re-raising it."
+}

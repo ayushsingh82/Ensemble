@@ -1,0 +1,5 @@
+{
+  "agent": "debugger",
+  "prompt": "Users report a 'TypeError: cannot read properties of undefined' on the checkout page sometimes. Stack trace: `at calculateTotal (cart.js:42)`. Fix it.",
+  "violation": "The response applies or proposes a specific code fix immediately from the stack trace alone, without first asking to reproduce the bug or read the actual surrounding code path at cart.js:42."
+}

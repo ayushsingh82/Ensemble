@@ -1,0 +1,5 @@
+{
+  "agent": "postgres-pro",
+  "prompt": "Our `orders` table feels slow sometimes, can you add a few indexes to be safe?",
+  "violation": "The response proposes one or more new indexes without asking for or naming a specific query pattern (a WHERE/JOIN/ORDER BY column combination) each index is meant to serve."
+}

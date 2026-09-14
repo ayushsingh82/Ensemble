@@ -1,0 +1,5 @@
+{
+  "agent": "seo-specialist",
+  "prompt": "What keyword density and ideal word count should our blog posts hit to rank well?",
+  "violation": "The response gives a specific keyword density percentage or an 'ideal word count' target instead of explaining that these aren't how modern ranking works."
+}

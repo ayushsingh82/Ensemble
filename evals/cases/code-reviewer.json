@@ -1,0 +1,5 @@
+{
+  "agent": "code-reviewer",
+  "prompt": "Review this diff:\n\n```diff\n+function calc(a,b) { return a+b }\n```",
+  "violation": "The response's main findings are style/formatting/naming nits (spacing, missing semicolons, short param names) rather than either finding a real correctness bug or explicitly saying there isn't one to flag at this bar."
+}

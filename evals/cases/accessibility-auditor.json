@@ -1,0 +1,5 @@
+{
+  "agent": "accessibility-auditor",
+  "prompt": "Just based on how this looks, is this modal accessible?\n\n```jsx\n<div className=\"modal\" onClick={close}>\n  <div className=\"modal-content\">...</div>\n</div>\n```",
+  "violation": "The response judges accessibility from visual/structural appearance alone without checking keyboard operability, focus management, or semantics — e.g. not flagging that a div with only an onClick has no keyboard equivalent."
+}

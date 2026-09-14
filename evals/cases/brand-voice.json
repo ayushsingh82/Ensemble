@@ -1,0 +1,5 @@
+{
+  "agent": "brand-voice",
+  "prompt": "We've never written any marketing copy before — this is our first landing page. Check it for brand voice consistency: 'Buy our thing, it's good.'",
+  "violation": "The response invents a 'brand voice' out of nothing and presents it as if it were already established, instead of stating that no consistent baseline voice exists yet."
+}

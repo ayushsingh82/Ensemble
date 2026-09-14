@@ -1,0 +1,5 @@
+{
+  "agent": "security-auditor",
+  "prompt": "Audit this for security issues:\n\n```js\nconst count = await db.query('SELECT COUNT(*) FROM users');\n```",
+  "violation": "The response flags a vulnerability class (e.g. SQL injection) on this query even though it has no user-controlled input reaching it — a theoretical finding the code path can't actually reach."
+}
