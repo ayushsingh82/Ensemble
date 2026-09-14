@@ -59,6 +59,48 @@ const AGENTS: Item[] = [
       "Schema, indexing, and query performance. Indexes justified by a real query pattern, migrations safe on a live table.",
   },
   {
+    name: "docker-specialist",
+    kit: "engineer",
+    blurb:
+      "Multi-stage builds, layer caching, and image size. Pinned base images, no secrets baked into layers.",
+  },
+  {
+    name: "python-pro",
+    kit: "engineer",
+    blurb:
+      "Idiomatic Python: type hints on public APIs, standard-library-first, no bare except blocks.",
+  },
+  {
+    name: "ci-engineer",
+    kit: "engineer",
+    blurb:
+      "Pipeline design: cheap checks first, real merge gates, flaky tests triaged by evidence not re-runs.",
+  },
+  {
+    name: "refactorer",
+    kit: "engineer",
+    blurb:
+      "Behavior-preserving structural cleanup only — bugs found along the way get flagged, not folded in.",
+  },
+  {
+    name: "performance-profiler",
+    kit: "engineer",
+    blurb:
+      "Measures the actual bottleneck before optimizing, and re-measures with the same method to confirm it moved.",
+  },
+  {
+    name: "accessibility-auditor",
+    kit: "engineer",
+    blurb:
+      "WCAG-grounded pre-ship audit: keyboard operability, screen reader support, contrast, concrete failure scenarios.",
+  },
+  {
+    name: "architect-reviewer",
+    kit: "engineer",
+    blurb:
+      "Reviews a design tradeoff before it's built — what it makes expensive later, and the strongest alternative.",
+  },
+  {
     name: "growth-strategist",
     kit: "marketing",
     blurb:
@@ -76,6 +118,18 @@ const AGENTS: Item[] = [
     blurb:
       "Optimizes for search intent, not keyword density. Fixes crawlability blockers before touching content.",
   },
+  {
+    name: "brand-voice",
+    kit: "marketing",
+    blurb:
+      "Keeps copy consistent with an established voice and flags unverifiable claims before they ship.",
+  },
+  {
+    name: "competitive-analyst",
+    kit: "marketing",
+    blurb:
+      "Sourced, factual competitor comparison — flags anything unverified instead of presenting it as fact.",
+  },
 ];
 
 const SKILLS: Item[] = [
@@ -90,6 +144,18 @@ const SKILLS: Item[] = [
     kit: "engineer",
     blurb:
       "Red, green, refactor. One failing test at a time, minimum code to pass it, refactor only once green.",
+  },
+  {
+    name: "playwright-e2e",
+    kit: "engineer",
+    blurb:
+      "End-to-end tests matched to the project's existing selector and structure conventions, no waitForTimeout.",
+  },
+  {
+    name: "stripe-integration",
+    kit: "engineer",
+    blurb:
+      "Payment/webhook flows matched to existing patterns. Signature-verified webhooks, idempotent, never trusts the client.",
   },
 ];
 
@@ -107,10 +173,28 @@ const COMMANDS: Item[] = [
       "Finds the highest-risk untested code paths in recent changes, ranked by risk, not by file count.",
   },
   {
+    name: "/api-scaffold",
+    kit: "engineer",
+    blurb:
+      "One-shot version of the api-scaffold skill — generate a matching endpoint on demand.",
+  },
+  {
+    name: "/email-sequence",
+    kit: "marketing",
+    blurb:
+      "Structures a multi-email sequence's order, trigger, and one claim per email before any copy is drafted.",
+  },
+  {
     name: "/launch-plan",
     kit: "marketing",
     blurb:
       "One claim, prioritized channels, mapped assets, sequencing, and a stated definition of success.",
+  },
+  {
+    name: "/campaign-brief",
+    kit: "marketing",
+    blurb:
+      "Objective, audience, claim, assets, timeline, and success metric — scoped before any copy gets written.",
   },
 ];
 
