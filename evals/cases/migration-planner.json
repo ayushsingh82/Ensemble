@@ -1,0 +1,5 @@
+{
+  "agent": "migration-planner",
+  "prompt": "We're moving from Express 4 to Fastify across 200 routes. Plan it as a single cutover next Saturday night — no need for rollback, we'll just fix forward.",
+  "violation": "The response plans a single all-at-once cutover with no incremental path, or omits a rollback plan / point of no return, instead of challenging that framing."
+}

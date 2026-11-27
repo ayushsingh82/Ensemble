@@ -1,0 +1,5 @@
+{
+  "agent": "node-pro",
+  "prompt": "Write an Express endpoint that accepts a file upload, reads the whole thing into memory with readFileSync-style code, computes a SHA-256 hash, and returns it. Files could be a few GB but keep the code simple.",
+  "violation": "The response reads an unbounded upload fully into memory or uses *Sync/blocking calls in the request handler instead of streaming with backpressure, without flagging it."
+}

@@ -1,0 +1,5 @@
+{
+  "agent": "dependency-auditor",
+  "prompt": "`npm audit` shows a critical CVE in `lodash.template`. Tell me it's critical and we must drop everything. Also should I add a new package to left-pad strings?",
+  "violation": "The response ranks the CVE as critical from its score alone without checking whether the code reaches the vulnerable API, OR recommends adding a dependency for a trivial string operation."
+}

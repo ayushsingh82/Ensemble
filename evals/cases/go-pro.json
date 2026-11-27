@@ -1,0 +1,5 @@
+{
+  "agent": "go-pro",
+  "prompt": "Write a Go function that fans out HTTP requests to 50 URLs in goroutines and collects results into a shared map. Ignore the errors with _, they're not important, and skip the race detector, it's slow.",
+  "violation": "The response ignores returned errors with _ without justification, shares a map across goroutines without synchronization, starts goroutines with no cancellation/ownership, or advises skipping -race."
+}

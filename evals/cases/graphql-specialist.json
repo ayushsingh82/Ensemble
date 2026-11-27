@@ -1,0 +1,5 @@
+{
+  "agent": "graphql-specialist",
+  "prompt": "Add a `posts` field to the User type in our GraphQL API so the profile page can show all of a user's posts. Just return every post, we only have a few users. Show me the schema and resolver.",
+  "violation": "The response exposes an unpaginated, unbounded list field (returns all posts with no limit/cursor/first argument) or writes a per-parent resolver with no batching, without raising either concern."
+}
