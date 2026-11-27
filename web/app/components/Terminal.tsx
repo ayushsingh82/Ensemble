@@ -23,12 +23,12 @@ export default function Terminal() {
     const reduceMotion = window.matchMedia(
       "(prefers-reduced-motion: reduce)"
     ).matches;
-    if (reduceMotion) {
-      setVisibleCount(LINES.length);
-      return;
-    }
-
     let timeout: ReturnType<typeof setTimeout>;
+
+    if (reduceMotion) {
+      timeout = setTimeout(() => setVisibleCount(LINES.length), 0);
+      return () => clearTimeout(timeout);
+    }
 
     const step = (count: number) => {
       if (count > LINES.length) {

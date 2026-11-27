@@ -1,6 +1,7 @@
 import Navbar from "./components/Navbar";
 import Terminal from "./components/Terminal";
 import Demo from "./components/Demo";
+import handoffs from "./handoffs.json";
 
 type Item = { name: string; blurb: string; kit: "engineer" | "marketing" };
 
@@ -131,6 +132,156 @@ const AGENTS: Item[] = [
     blurb:
       "Sourced, factual competitor comparison — flags anything unverified instead of presenting it as fact.",
   },
+  {
+    name: "graphql-specialist",
+    kit: "engineer",
+    blurb:
+      "Schemas clients can't turn into a denial of service: batched resolvers, deliberate nullability, paginated lists, additive evolution.",
+  },
+  {
+    name: "mobile-specialist",
+    kit: "engineer",
+    blurb:
+      "React Native/Flutter screens built for loading, empty, error, and offline, with permissions asked when the feature needs them.",
+  },
+  {
+    name: "data-engineer",
+    kit: "engineer",
+    blurb:
+      "Idempotent pipelines with a stated grain, a backfill plan, and validation that fails loudly on schema drift.",
+  },
+  {
+    name: "technical-writer",
+    kit: "engineer",
+    blurb:
+      "Docs matched to your existing style, with every command and snippet actually run before it ships.",
+  },
+  {
+    name: "devops-engineer",
+    kit: "engineer",
+    blurb:
+      "Infrastructure changes shown as a plan first, separated by environment, with the rollback written before the apply.",
+  },
+  {
+    name: "rust-pro",
+    kit: "engineer",
+    blurb:
+      "Types carry the invariants. Typed errors in libraries, no unwrap on external input, no unsafe without a safety comment.",
+  },
+  {
+    name: "go-pro",
+    kit: "engineer",
+    blurb:
+      "Plain Go: wrapped errors, goroutines with an owner and a cancel path, verified with -race.",
+  },
+  {
+    name: "ml-engineer",
+    kit: "engineer",
+    blurb:
+      "Fixes the evaluation first, hunts leakage, records reproducibility, and checks training/serving parity.",
+  },
+  {
+    name: "kubernetes-specialist",
+    kit: "engineer",
+    blurb:
+      "Manifests with measured limits, distinct readiness and liveness probes, safe rollouts, no latest tags or root containers.",
+  },
+  {
+    name: "incident-responder",
+    kit: "engineer",
+    blurb:
+      "Restore service first with the most reversible mitigation, keep a timeline, then write a blameless postmortem.",
+  },
+  {
+    name: "observability-engineer",
+    kit: "engineer",
+    blurb:
+      "Alerts on user-visible symptoms, low-cardinality metrics, structured logs, and an alert tested on a real failure.",
+  },
+  {
+    name: "node-pro",
+    kit: "engineer",
+    blurb:
+      "Keeps the event loop free, streams large payloads with backpressure, handles every promise, shuts down gracefully.",
+  },
+  {
+    name: "dependency-auditor",
+    kit: "engineer",
+    blurb:
+      "Ranks vulnerabilities by whether the code actually reaches them, and checks maintenance and licenses before adding a package.",
+  },
+  {
+    name: "migration-planner",
+    kit: "engineer",
+    blurb:
+      "Turns a big-bang migration into small steps that each ship, each verify, and each have a stated rollback.",
+  },
+  {
+    name: "data-scientist",
+    kit: "engineer",
+    blurb:
+      "Answers the stated question with sample sizes and uncertainty, and tries to break its own result.",
+  },
+  {
+    name: "prompt-engineer",
+    kit: "engineer",
+    blurb:
+      "Treats prompts like code: a real failing case set, one change at a time, re-run for regressions.",
+  },
+  {
+    name: "smart-contract-auditor",
+    kit: "engineer",
+    blurb:
+      "Reads EVM contracts like a flash-loan attacker. Every finding has a concrete exploit sequence; never declares a contract safe.",
+  },
+  {
+    name: "release-manager",
+    kit: "engineer",
+    blurb:
+      "Version numbers that follow the contract, changelogs derived from the diff, and a rehearsed rollback.",
+  },
+  {
+    name: "product-manager",
+    kit: "engineer",
+    blurb:
+      "Specs with a named problem, a smallest testable version, explicit out-of-scope, and pass/fail acceptance criteria.",
+  },
+  {
+    name: "css-specialist",
+    kit: "engineer",
+    blurb:
+      "Fixes layout at its cause: stacking contexts, the box model, the cascade. No z-index arms races, no !important.",
+  },
+  {
+    name: "sales-enablement",
+    kit: "marketing",
+    blurb:
+      "Battlecards and objection handling for a specific buyer, grounded in the product as it is, limits included.",
+  },
+  {
+    name: "pricing-strategist",
+    kit: "marketing",
+    blurb:
+      "Prices against a value metric, with the floor, the ceiling, and a test that says when to reverse the change.",
+  },
+  {
+    name: "analytics-engineer",
+    kit: "marketing",
+    blurb:
+      "One definition per metric, a tracking plan whose events have all been seen firing, no personal data in properties.",
+  },
+  {
+    name: "conversion-optimizer",
+    kit: "marketing",
+    blurb:
+      "One variable per test, a stopping rule set before launch, and results reported with uncertainty.",
+  },
+  {
+    name: "customer-researcher",
+    kit: "marketing",
+    blurb:
+      "Synthesizes interviews and tickets into counted themes with verbatim quotes and no invented personas.",
+  },
 ];
 
 const SKILLS: Item[] = [
@@ -157,6 +308,36 @@ const SKILLS: Item[] = [
     kit: "engineer",
     blurb:
       "Payment/webhook flows matched to existing patterns. Signature-verified webhooks, idempotent, never trusts the client.",
+  },
+  {
+    name: "db-migration",
+    kit: "engineer",
+    blurb:
+      "Expand, migrate, contract: schema changes that are safe on live tables, with batched backfills and stated lock behavior.",
+  },
+  {
+    name: "adr-writing",
+    kit: "engineer",
+    blurb:
+      "Records a technical decision with real alternatives, consequences, and a measurable trigger to revisit it.",
+  },
+  {
+    name: "incident-postmortem",
+    kit: "engineer",
+    blurb:
+      "A postmortem from evidence: timeline, impact in numbers, a missing safeguard as cause, owned follow-ups.",
+  },
+  {
+    name: "release-notes",
+    kit: "engineer",
+    blurb:
+      "Changelog entries built from the real diff, grouped by user effect, with migration steps for breaking changes.",
+  },
+  {
+    name: "openapi-spec",
+    kit: "engineer",
+    blurb:
+      "An OpenAPI spec derived from the running handlers, including the error responses they actually return.",
   },
 ];
 
@@ -196,6 +377,36 @@ const COMMANDS: Item[] = [
     kit: "marketing",
     blurb:
       "Objective, audience, claim, assets, timeline, and success metric — scoped before any copy gets written.",
+  },
+  {
+    name: "/which-agent",
+    kit: "engineer",
+    blurb:
+      "Picks the right agent for a task from their trigger and not-for lines, and says why in one answer.",
+  },
+  {
+    name: "/pr-description",
+    kit: "engineer",
+    blurb:
+      "A PR description from the real diff, listing only the verification that was actually run.",
+  },
+  {
+    name: "/dependency-audit",
+    kit: "engineer",
+    blurb:
+      "Audits dependencies with real tooling, ranked by whether the code reaches the vulnerable path.",
+  },
+  {
+    name: "/rollback-plan",
+    kit: "engineer",
+    blurb:
+      "The rollback plan for the pending change, including what a code revert can't undo.",
+  },
+  {
+    name: "/competitor-teardown",
+    kit: "marketing",
+    blurb:
+      "A sourced one-page teardown of a named competitor, with unverified claims kept out of comparisons.",
   },
 ];
 
@@ -441,6 +652,45 @@ export default function Home() {
           <ItemGrid items={AGENTS} />
         </section>
 
+        <section id="handoffs" className="py-16 border-b border-border">
+          <Eyebrow>Not a pile of prompts</Eyebrow>
+          <h2 className="text-2xl font-semibold tracking-tight mb-1">
+            Who hands off to whom
+          </h2>
+          <p className="text-sm text-muted mb-8 max-w-xl">
+            Every agent names the specialist it passes work to, and when.
+            Generated from the agent files themselves, and CI fails if a
+            hand-off points at an agent that doesn&apos;t exist.{" "}
+            <code className="font-mono">tech-lead</code> can delegate to all of
+            them.
+          </p>
+          <ul className="divide-y divide-border border border-border">
+            {Object.entries(handoffs as Record<string, { to: string; why: string }[]>)
+              .filter(([, edges]) => edges.length > 0)
+              .map(([agent, edges]) => (
+                <li
+                  key={agent}
+                  className="grid sm:grid-cols-[13rem_1fr] gap-x-6 gap-y-2 p-4"
+                >
+                  <code className="text-[13px] font-mono text-foreground">
+                    {agent}
+                  </code>
+                  <div className="flex flex-wrap gap-2">
+                    {edges.map((e) => (
+                      <span
+                        key={e.to}
+                        title={e.why}
+                        className="text-[12px] font-mono text-muted bg-white/[.06] px-2 py-1"
+                      >
+                        → {e.to}
+                      </span>
+                    ))}
+                  </div>
+                </li>
+              ))}
+          </ul>
+        </section>
+
         <section id="skills" className="py-16 border-b border-border">
           <Eyebrow>Loaded automatically</Eyebrow>
           <h2 className="text-2xl font-semibold tracking-tight mb-1">
@@ -468,8 +718,15 @@ export default function Home() {
           <h2 className="text-2xl font-semibold tracking-tight mb-6">
             Install
           </h2>
+          <p className="text-muted leading-7 max-w-xl mb-4">
+            One line in Claude Code (2.1.275 or later):
+          </p>
+          <pre className="rounded-none border border-border bg-black/30 p-5 text-[13px] font-mono overflow-x-auto text-foreground mb-8">
+            <code>{`/plugin install ensemble --marketplace ayushsingh82/Ensemble`}</code>
+          </pre>
           <p className="text-muted leading-7 max-w-xl mb-6">
-            No CLI, no account. Copy the files straight into your project.
+            Or skip the plugin system: no CLI, no account, just copy the
+            files straight into your project.
           </p>
           <pre className="rounded-none border border-border bg-black/30 p-5 text-[13px] font-mono overflow-x-auto text-foreground">
             <code>{`git clone https://github.com/ayushsingh82/Ensemble.git
