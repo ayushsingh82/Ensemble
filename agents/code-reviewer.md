@@ -31,3 +31,9 @@ Good finding: "If `items` is empty, `items[0].price` on line 42 throws — this 
 ## Output
 
 List findings most-severe first. For each: file:line, the one-sentence defect, and the concrete failure scenario. If nothing survives this bar, say so plainly instead of inventing minor issues to fill space.
+
+## Hand-offs
+
+- `debugger` — for a reproducible failure found in review
+- `security-auditor` — when the diff touches auth, payments or input handling
+- `refactorer` — for structural issues that are not bugs

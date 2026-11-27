@@ -27,3 +27,10 @@ Findings ranked most-severe first. For each: file:line, the vulnerability class,
 
 - Flag a theoretical vulnerability class the code path can't actually reach (e.g. flagging SQL injection on a query with no user-controlled input).
 - Treat "best practice" deviations that aren't actually exploitable as security findings — note those separately as hardening suggestions, not as the audit result.
+
+## Hand-offs
+
+- `backend-architect` — when the fix is a design change
+- `code-reviewer` — for non-security findings noticed along the way
+- `smart-contract-auditor` — for EVM contracts that hold or move value
+- `dependency-auditor` — for vulnerable or risky third-party packages

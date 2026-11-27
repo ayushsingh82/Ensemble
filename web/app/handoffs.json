@@ -1,0 +1,673 @@
+{
+ "accessibility-auditor": [
+  {
+   "to": "react-specialist",
+   "why": "implements the fixes"
+  },
+  {
+   "to": "test-automator",
+   "why": "adds regression tests for the failing flows"
+  }
+ ],
+ "analytics-engineer": [
+  {
+   "to": "data-engineer",
+   "why": "when the fix is in the warehouse model or pipeline"
+  },
+  {
+   "to": "data-scientist",
+   "why": "for experiment analysis and significance"
+  },
+  {
+   "to": "growth-strategist",
+   "why": "when the metrics reveal a funnel constraint to act on"
+  },
+  {
+   "to": "react-specialist",
+   "why": "for implementing the tracking calls in UI code"
+  }
+ ],
+ "architect-reviewer": [
+  {
+   "to": "backend-architect",
+   "why": "revises the design if rejected"
+  },
+  {
+   "to": "code-reviewer",
+   "why": "reviews the implementation once approved"
+  }
+ ],
+ "backend-architect": [
+  {
+   "to": "postgres-pro",
+   "why": "schema/index/migration detail"
+  },
+  {
+   "to": "security-auditor",
+   "why": "before shipping auth, payments or user data"
+  },
+  {
+   "to": "architect-reviewer",
+   "why": "for a second opinion on a hard tradeoff"
+  },
+  {
+   "to": "graphql-specialist",
+   "why": "when the API is GraphQL"
+  },
+  {
+   "to": "prompt-engineer",
+   "why": "when the service wraps an LLM call"
+  }
+ ],
+ "brand-voice": [
+  {
+   "to": "content-marketer",
+   "why": "when copy needs rewriting, not just flagging"
+  },
+  {
+   "to": "seo-specialist",
+   "why": "when voice conflicts with search intent"
+  }
+ ],
+ "ci-engineer": [
+  {
+   "to": "test-automator",
+   "why": "for flaky or missing tests behind a failing gate"
+  },
+  {
+   "to": "docker-specialist",
+   "why": "for slow or bloated image builds"
+  },
+  {
+   "to": "dependency-auditor",
+   "why": "to add dependency audit checks to the pipeline"
+  }
+ ],
+ "code-reviewer": [
+  {
+   "to": "debugger",
+   "why": "for a reproducible failure found in review"
+  },
+  {
+   "to": "security-auditor",
+   "why": "when the diff touches auth, payments or input handling"
+  },
+  {
+   "to": "refactorer",
+   "why": "for structural issues that are not bugs"
+  }
+ ],
+ "competitive-analyst": [
+  {
+   "to": "growth-strategist",
+   "why": "to turn findings into a positioning decision"
+  },
+  {
+   "to": "brand-voice",
+   "why": "to check claims against the established voice"
+  }
+ ],
+ "content-marketer": [
+  {
+   "to": "brand-voice",
+   "why": "to check consistency before publishing"
+  },
+  {
+   "to": "seo-specialist",
+   "why": "for search-intent alignment"
+  }
+ ],
+ "conversion-optimizer": [
+  {
+   "to": "analytics-engineer",
+   "why": "to define and verify the events the test depends on"
+  },
+  {
+   "to": "data-scientist",
+   "why": "for the significance analysis"
+  },
+  {
+   "to": "content-marketer",
+   "why": "to draft the variant copy once the hypothesis is set"
+  },
+  {
+   "to": "react-specialist",
+   "why": "to implement the variant behind a flag"
+  }
+ ],
+ "css-specialist": [
+  {
+   "to": "react-specialist",
+   "why": "when the problem is component structure or state"
+  },
+  {
+   "to": "accessibility-auditor",
+   "why": "for focus, contrast, and reflow checks"
+  },
+  {
+   "to": "performance-profiler",
+   "why": "when layout shift or paint cost is the symptom"
+  }
+ ],
+ "customer-researcher": [
+  {
+   "to": "product-manager",
+   "why": "to turn findings into a scoped spec"
+  },
+  {
+   "to": "content-marketer",
+   "why": "for the customer's own language in copy"
+  },
+  {
+   "to": "pricing-strategist",
+   "why": "for willingness-to-pay signals"
+  },
+  {
+   "to": "sales-enablement",
+   "why": "for the real objections behind sales materials"
+  }
+ ],
+ "data-engineer": [
+  {
+   "to": "postgres-pro",
+   "why": "when the source or sink is a Postgres tuning problem"
+  },
+  {
+   "to": "python-pro",
+   "why": "for the packaging and typing of pipeline code"
+  },
+  {
+   "to": "analytics-engineer",
+   "why": "when the consumer is a dashboard or tracking plan"
+  },
+  {
+   "to": "ml-engineer",
+   "why": "when the output feeds a training or serving path"
+  }
+ ],
+ "data-scientist": [
+  {
+   "to": "ml-engineer",
+   "why": "when the analysis should become a production model"
+  },
+  {
+   "to": "data-engineer",
+   "why": "when the data needs a reliable pipeline"
+  },
+  {
+   "to": "analytics-engineer",
+   "why": "when the metric definitions or tracking are the problem"
+  },
+  {
+   "to": "conversion-optimizer",
+   "why": "when the question is about an A/B test on a funnel"
+  }
+ ],
+ "debugger": [
+  {
+   "to": "test-automator",
+   "why": "to lock the fix in with a regression test"
+  },
+  {
+   "to": "code-reviewer",
+   "why": "to review the fix diff"
+  }
+ ],
+ "dependency-auditor": [
+  {
+   "to": "migration-planner",
+   "why": "when the fix is a major-version or framework upgrade"
+  },
+  {
+   "to": "security-auditor",
+   "why": "when a vulnerable path handles untrusted input"
+  },
+  {
+   "to": "ci-engineer",
+   "why": "to add audit and lockfile checks to the pipeline"
+  }
+ ],
+ "devops-engineer": [
+  {
+   "to": "security-auditor",
+   "why": "for IAM scope, public exposure, and secrets handling"
+  },
+  {
+   "to": "kubernetes-specialist",
+   "why": "when the target is a cluster workload"
+  },
+  {
+   "to": "ci-engineer",
+   "why": "to gate the pipeline that applies the change"
+  },
+  {
+   "to": "observability-engineer",
+   "why": "to add alerts for the resources provisioned"
+  }
+ ],
+ "docker-specialist": [
+  {
+   "to": "ci-engineer",
+   "why": "to wire image builds into the pipeline"
+  },
+  {
+   "to": "security-auditor",
+   "why": "for secrets or privilege concerns"
+  }
+ ],
+ "go-pro": [
+  {
+   "to": "rust-pro",
+   "why": "when memory control or zero-cost abstractions are the requirement"
+  },
+  {
+   "to": "performance-profiler",
+   "why": "for pprof-driven optimization"
+  },
+  {
+   "to": "backend-architect",
+   "why": "when the question is service boundaries, not Go"
+  },
+  {
+   "to": "test-automator",
+   "why": "for table-driven and integration tests"
+  }
+ ],
+ "graphql-specialist": [
+  {
+   "to": "postgres-pro",
+   "why": "when batched resolvers still produce slow queries"
+  },
+  {
+   "to": "security-auditor",
+   "why": "for field-level authorization and query-cost abuse"
+  },
+  {
+   "to": "typescript-pro",
+   "why": "for generated types and resolver typing"
+  }
+ ],
+ "growth-strategist": [
+  {
+   "to": "content-marketer",
+   "why": "to execute the chosen channel"
+  },
+  {
+   "to": "competitive-analyst",
+   "why": "for evidence on alternatives"
+  }
+ ],
+ "incident-responder": [
+  {
+   "to": "debugger",
+   "why": "for root-cause analysis once service is restored"
+  },
+  {
+   "to": "observability-engineer",
+   "why": "to close the detection gap the incident exposed"
+  },
+  {
+   "to": "release-manager",
+   "why": "for rollback and rollout process fixes"
+  },
+  {
+   "to": "kubernetes-specialist",
+   "why": "when the failing layer is the cluster"
+  }
+ ],
+ "kubernetes-specialist": [
+  {
+   "to": "docker-specialist",
+   "why": "for image size, build, and base image issues"
+  },
+  {
+   "to": "devops-engineer",
+   "why": "for the cluster and cloud resources underneath"
+  },
+  {
+   "to": "observability-engineer",
+   "why": "for dashboards and alerts on the workload"
+  },
+  {
+   "to": "incident-responder",
+   "why": "when a live outage is in progress"
+  }
+ ],
+ "migration-planner": [
+  {
+   "to": "architect-reviewer",
+   "why": "to review the target design before committing to it"
+  },
+  {
+   "to": "refactorer",
+   "why": "for behavior-preserving prep work before the migration"
+  },
+  {
+   "to": "test-automator",
+   "why": "for characterization tests that guard the migration"
+  },
+  {
+   "to": "release-manager",
+   "why": "for rollout sequencing and flags"
+  }
+ ],
+ "ml-engineer": [
+  {
+   "to": "data-scientist",
+   "why": "for exploratory analysis and hypothesis checks"
+  },
+  {
+   "to": "data-engineer",
+   "why": "for the feature pipeline and backfills"
+  },
+  {
+   "to": "python-pro",
+   "why": "for packaging the training and serving code"
+  },
+  {
+   "to": "observability-engineer",
+   "why": "for drift and input monitoring in production"
+  }
+ ],
+ "mobile-specialist": [
+  {
+   "to": "typescript-pro",
+   "why": "for complex shared types across native and JS"
+  },
+  {
+   "to": "accessibility-auditor",
+   "why": "for screen-reader and dynamic-type checks"
+  },
+  {
+   "to": "performance-profiler",
+   "why": "for jank, startup time, or memory"
+  },
+  {
+   "to": "release-manager",
+   "why": "for store builds, versioning, and phased rollout"
+  }
+ ],
+ "node-pro": [
+  {
+   "to": "typescript-pro",
+   "why": "for types across the service boundary"
+  },
+  {
+   "to": "performance-profiler",
+   "why": "for flame graphs and leak hunting"
+  },
+  {
+   "to": "backend-architect",
+   "why": "when the question is API or service design"
+  },
+  {
+   "to": "security-auditor",
+   "why": "for input handling and dependency exposure"
+  }
+ ],
+ "observability-engineer": [
+  {
+   "to": "incident-responder",
+   "why": "when an alert indicates a live outage"
+  },
+  {
+   "to": "performance-profiler",
+   "why": "when traces show a slow path that needs profiling"
+  },
+  {
+   "to": "devops-engineer",
+   "why": "for the alerting infrastructure itself"
+  },
+  {
+   "to": "security-auditor",
+   "why": "when logs may contain sensitive data"
+  }
+ ],
+ "performance-profiler": [
+  {
+   "to": "postgres-pro",
+   "why": "when the bottleneck is a query"
+  },
+  {
+   "to": "refactorer",
+   "why": "when the fix is structural"
+  }
+ ],
+ "postgres-pro": [
+  {
+   "to": "backend-architect",
+   "why": "when the schema problem is really an API design problem"
+  },
+  {
+   "to": "performance-profiler",
+   "why": "to confirm the slow path before indexing"
+  }
+ ],
+ "pricing-strategist": [
+  {
+   "to": "competitive-analyst",
+   "why": "for sourced competitor pricing"
+  },
+  {
+   "to": "customer-researcher",
+   "why": "for willingness-to-pay evidence"
+  },
+  {
+   "to": "analytics-engineer",
+   "why": "for the usage data the value metric depends on"
+  },
+  {
+   "to": "content-marketer",
+   "why": "for the pricing page once the decision is made"
+  }
+ ],
+ "product-manager": [
+  {
+   "to": "tech-lead",
+   "why": "to decompose the finished spec into delegated work"
+  },
+  {
+   "to": "architect-reviewer",
+   "why": "to pressure-test a spec with a costly design decision"
+  },
+  {
+   "to": "customer-researcher",
+   "why": "to ground the problem in real user evidence"
+  },
+  {
+   "to": "analytics-engineer",
+   "why": "to define how success will be measured"
+  }
+ ],
+ "prompt-engineer": [
+  {
+   "to": "ml-engineer",
+   "why": "when the failure needs data or fine-tuning, not wording"
+  },
+  {
+   "to": "test-automator",
+   "why": "to turn the case set into a regression test in CI"
+  },
+  {
+   "to": "security-auditor",
+   "why": "for prompt injection through untrusted inputs"
+  }
+ ],
+ "python-pro": [
+  {
+   "to": "test-automator",
+   "why": "for test coverage on new modules"
+  },
+  {
+   "to": "typescript-pro",
+   "why": "when the same contract must match a TS client"
+  }
+ ],
+ "react-specialist": [
+  {
+   "to": "accessibility-auditor",
+   "why": "before shipping user-facing UI"
+  },
+  {
+   "to": "typescript-pro",
+   "why": "for complex generic or prop typing"
+  },
+  {
+   "to": "test-automator",
+   "why": "for component tests"
+  },
+  {
+   "to": "css-specialist",
+   "why": "for layout, stacking, and responsive bugs"
+  },
+  {
+   "to": "mobile-specialist",
+   "why": "when the target is React Native instead of web"
+  }
+ ],
+ "refactorer": [
+  {
+   "to": "test-automator",
+   "why": "to pin behaviour before restructuring"
+  },
+  {
+   "to": "code-reviewer",
+   "why": "to confirm behaviour is preserved"
+  }
+ ],
+ "release-manager": [
+  {
+   "to": "ci-engineer",
+   "why": "for the build and publish pipeline"
+  },
+  {
+   "to": "technical-writer",
+   "why": "for upgrade guides on breaking releases"
+  },
+  {
+   "to": "incident-responder",
+   "why": "when a release goes wrong in production"
+  },
+  {
+   "to": "migration-planner",
+   "why": "when the release carries a staged migration"
+  }
+ ],
+ "rust-pro": [
+  {
+   "to": "go-pro",
+   "why": "when the service belongs in Go instead"
+  },
+  {
+   "to": "performance-profiler",
+   "why": "to measure before hand-optimizing"
+  },
+  {
+   "to": "security-auditor",
+   "why": "for any `unsafe` or FFI boundary"
+  },
+  {
+   "to": "test-automator",
+   "why": "for property or integration tests"
+  }
+ ],
+ "sales-enablement": [
+  {
+   "to": "competitive-analyst",
+   "why": "for sourced competitor facts to put in a battlecard"
+  },
+  {
+   "to": "brand-voice",
+   "why": "to check claims and tone before the asset ships"
+  },
+  {
+   "to": "pricing-strategist",
+   "why": "when the objection is really about price or packaging"
+  },
+  {
+   "to": "customer-researcher",
+   "why": "for the real buyer language behind the objections"
+  }
+ ],
+ "security-auditor": [
+  {
+   "to": "backend-architect",
+   "why": "when the fix is a design change"
+  },
+  {
+   "to": "code-reviewer",
+   "why": "for non-security findings noticed along the way"
+  },
+  {
+   "to": "smart-contract-auditor",
+   "why": "for EVM contracts that hold or move value"
+  },
+  {
+   "to": "dependency-auditor",
+   "why": "for vulnerable or risky third-party packages"
+  }
+ ],
+ "seo-specialist": [
+  {
+   "to": "content-marketer",
+   "why": "to rewrite pages for search intent"
+  },
+  {
+   "to": "brand-voice",
+   "why": "to keep optimized copy on voice"
+  }
+ ],
+ "smart-contract-auditor": [
+  {
+   "to": "security-auditor",
+   "why": "for the off-chain backend and key handling around the contract"
+  },
+  {
+   "to": "test-automator",
+   "why": "for invariant and fork tests that lock in the fixes"
+  },
+  {
+   "to": "architect-reviewer",
+   "why": "when the issue is the design (privilege model, upgrade path)"
+  }
+ ],
+ "tech-lead": [],
+ "technical-writer": [
+  {
+   "to": "code-reviewer",
+   "why": "when writing docs exposes behavior that looks like a bug"
+  },
+  {
+   "to": "content-marketer",
+   "why": "when the page is really a pitch, not documentation"
+  },
+  {
+   "to": "brand-voice",
+   "why": "to check docs against an established voice guide"
+  }
+ ],
+ "test-automator": [
+  {
+   "to": "debugger",
+   "why": "when a new test exposes a real bug"
+  },
+  {
+   "to": "ci-engineer",
+   "why": "to enforce the tests as a merge gate"
+  }
+ ],
+ "typescript-pro": [
+  {
+   "to": "react-specialist",
+   "why": "for component API design"
+  },
+  {
+   "to": "refactorer",
+   "why": "for large type-driven restructures"
+  },
+  {
+   "to": "node-pro",
+   "why": "when the problem is Node runtime behavior, not types"
+  }
+ ]
+}

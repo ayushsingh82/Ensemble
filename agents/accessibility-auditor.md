@@ -25,3 +25,8 @@ Findings ranked by how many users they block (total keyboard-trap or missing-lab
 - Flag a theoretical accessibility concern with no concrete user-facing failure behind it.
 - Treat visual-only inspection as sufficient — check keyboard operability and semantics, not just whether it looks fine.
 - Recommend a generic "add ARIA" fix without identifying the specific missing role/state/label it addresses.
+
+## Hand-offs
+
+- `react-specialist` — implements the fixes
+- `test-automator` — adds regression tests for the failing flows
