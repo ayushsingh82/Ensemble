@@ -5,10 +5,13 @@ A small, honest team for Claude Code — free, open-source, curated agents, skil
 Most agent packs sell you a headcount: 89 agents, 100+ skills, padded to look comprehensive. Ensemble ships a small set across engineering and marketing, each written specifically enough that it actually changes how Claude behaves, and grows only when a new specialist earns its place.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-informational.svg)](LICENSE)
+[![validate](https://github.com/ayushsingh82/Ensemble/actions/workflows/validate.yml/badge.svg)](.github/workflows/validate.yml)
+
+See the [hand-off graph](HANDOFFS.md) and [CONTRIBUTING](CONTRIBUTING.md).
 
 ## What's inside
 
-**21 agents** — `agents/`
+**46 agents** — `agents/`
 
 | Engineer kit | Marketing kit |
 |---|---|
@@ -29,21 +32,44 @@ Most agent packs sell you a headcount: 89 agents, 100+ skills, padded to look co
 | `accessibility-auditor` — WCAG-grounded, concrete assistive-tech findings |  |
 | `architect-reviewer` — reviews a design/tradeoff decision before it's built |  |
 
-**4 skills** — `skills/` (loaded automatically, exactly when relevant)
+**25 more specialists** (same bar: specific, short, with a refuse-to-do section):
+
+- Engineer — `graphql-specialist`, `mobile-specialist`, `data-engineer`, `technical-writer`, `devops-engineer`, `rust-pro`, `go-pro`, `ml-engineer`, `kubernetes-specialist`, `incident-responder`, `observability-engineer`, `node-pro`, `dependency-auditor`, `migration-planner`, `data-scientist`, `prompt-engineer`, `smart-contract-auditor`, `release-manager`, `product-manager`, `css-specialist`
+- Marketing — `sales-enablement`, `pricing-strategist`, `analytics-engineer`, `conversion-optimizer`, `customer-researcher`
+
+**9 skills** — `skills/` (loaded automatically, exactly when relevant)
 - `api-scaffold` — matches existing codebase conventions instead of imposing new architecture
 - `tdd-workflow` — red/green/refactor, one failing test at a time
 - `playwright-e2e` — end-to-end tests matched to existing selector/structure conventions
 - `stripe-integration` — payment/webhook flows matched to existing patterns, signature-verified, idempotent
+- `db-migration` — expand/migrate/contract schema changes safe on live tables
+- `adr-writing` — decision records with real alternatives and a revisit trigger
+- `incident-postmortem` — evidence-based timeline, missing-safeguard cause, owned follow-ups
+- `release-notes` — changelog entries from the real diff, grouped by user effect
+- `openapi-spec` — a spec derived from what the handlers actually return
 
-**6 commands** — `commands/` (fired from the prompt)
+**11 commands** — `commands/` (fired from the prompt)
 - `/deploy-checklist` — build/tests/secrets/migrations/security gate before shipping
 - `/test-coverage` — highest-risk untested paths in recent changes, ranked
 - `/api-scaffold` — one-shot version of the skill for explicit invocation
 - `/launch-plan` — claim, channels, assets, sequencing, success metric
 - `/campaign-brief` — objective, audience, claim, assets, timeline, success metric
 - `/email-sequence` — sequence structure + one-claim-per-email discipline
+- `/which-agent` — pick the right agent for a task, with a one-line reason
+- `/pr-description` — PR description from the real diff, only verification actually run
+- `/dependency-audit` — vulnerabilities ranked by whether the code reaches them
+- `/rollback-plan` — rollback plan incl. what a code revert can't undo
+- `/competitor-teardown` — sourced competitor one-pager, unverified claims excluded
 
 ## Install
+
+As a Claude Code plugin (2.1.275 or later) — one line:
+
+```
+/plugin install ensemble --marketplace ayushsingh82/Ensemble
+```
+
+Or copy the files by hand:
 
 No CLI, no account. Copy the files straight into your project's `.claude/` folder:
 
@@ -80,7 +106,7 @@ Agent naming conventions follow the wider Claude Code subagent ecosystem; full a
 
 ```
 agentkit/
-├── agents/       21 subagent definitions (.claude/agents/*.md)
+├── agents/       46 subagent definitions (.claude/agents/*.md)
 ├── skills/       4 auto-loaded skills (.claude/skills/<name>/SKILL.md)
 ├── commands/     6 slash commands (.claude/commands/*.md)
 ├── evals/        self-eval harness — one test case per agent, not yet run

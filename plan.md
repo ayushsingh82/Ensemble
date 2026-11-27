@@ -114,3 +114,12 @@ Stretch / lower priority:
 - [x] Phase 2 of acquisition-readiness roadmap (see section above): before/after demo + 21-case eval harness built
 
 See "Goal: acquisition / acqui-hire readiness" above for the active, detailed roadmap (Phases 1, 3, 4, 5 still open).
+
+## Status update — 2026-11-27
+
+Done: `tools/check-agents.mjs` + `tools/build-handoffs.mjs --check` in CI; CONTRIBUTING.md; hand-off graph generated from each agent's `## Hand-offs` section (46 agents, 145 edges, no orphans) and shown on the site; `tech-lead` delegation map covers all agents; 25 more agents, 5 skills, 5 commands (46 / 9 / 11) each with an eval case; Claude Code plugin manifest + marketplace (`.claude-plugin/`, validated with `claude plugin validate`); Vercel Analytics wired in; launch post drafted at `docs/launch-post.md`; eval model IDs corrected in `evals/run.mjs`.
+
+Still blocked on the user:
+- [ ] Run `ANTHROPIC_API_KEY=... node evals/run.mjs`, then publish the real pass rates and fix failing agents. No pass rate is cited anywhere until then.
+- [ ] Deploy `web/` to Vercel (needs login), enable Analytics in the dashboard.
+- [ ] Push so the `/plugin install ensemble --marketplace ayushsingh82/Ensemble` line can be tested for real.
