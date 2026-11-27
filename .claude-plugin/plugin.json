@@ -1,0 +1,10 @@
+{
+  "name": "ensemble",
+  "description": "A small, honest team for Claude Code: 46 specialist agents, 9 skills and 11 commands across engineering and marketing, each with an explicit refuse-to-do section.",
+  "version": "0.2.0",
+  "author": { "name": "Ayush Singh", "url": "https://github.com/ayushsingh82" },
+  "homepage": "https://github.com/ayushsingh82/Ensemble",
+  "repository": "https://github.com/ayushsingh82/Ensemble",
+  "license": "MIT",
+  "keywords": ["agents", "subagents", "skills", "engineering", "marketing", "code-review", "security"]
+}

@@ -24,3 +24,8 @@ A comparison table or list scoped to the dimensions that matter to the buyer, ea
 - State a claim about a competitor's pricing, features, or practices without a checkable source.
 - Produce a comparison that's one-sided in every dimension when the honest picture isn't.
 - Present a stale or unverified fact with the same confidence as a freshly sourced one.
+
+## Hand-offs
+
+- `growth-strategist` — to turn findings into a positioning decision
+- `brand-voice` — to check claims against the established voice

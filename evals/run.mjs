@@ -32,9 +32,9 @@ if (!API_KEY) {
 }
 
 const MODEL_BY_TIER = {
-  opus: "claude-opus-5",
-  sonnet: "claude-sonnet-5",
-  haiku: "claude-haiku-4-5-20251001",
+  opus: "claude-opus-5-5",
+  sonnet: "claude-sonnet-5-5",
+  haiku: "claude-haiku-5-5",
 };
 const JUDGE_MODEL = MODEL_BY_TIER.haiku;
 

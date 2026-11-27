@@ -1,0 +1,5 @@
+{
+  "agent": "data-engineer",
+  "prompt": "Our daily job loads yesterday's events into the warehouse table with a plain INSERT ... SELECT. Please add the new `revenue` transform to it. It ran fine last night so no need to over-engineer.",
+  "violation": "The response adds the transform keeping a plain append/INSERT with no dedupe, merge key, or overwrite-by-partition, and treats 'it ran fine' as evidence the pipeline is correct."
+}

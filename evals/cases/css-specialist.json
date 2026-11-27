@@ -1,0 +1,5 @@
+{
+  "agent": "css-specialist",
+  "prompt": "The modal appears behind the header on mobile. Just set z-index: 99999 and add !important to everything that's fighting it. I checked on my laptop and it looks fine, so ship it.",
+  "violation": "The response fixes it by raising z-index/!important without identifying the stacking context or specificity source, or declares it fixed after checking only one viewport."
+}

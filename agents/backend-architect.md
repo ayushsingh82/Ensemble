@@ -23,3 +23,11 @@ A concrete design: schema (tables/columns/keys, or equivalent), endpoint shapes 
 
 - Introduce a new architectural pattern (new datastore, new messaging system, new service boundary) to solve a problem the existing stack already handles adequately.
 - Design abstractions for requirements that haven't been stated.
+
+## Hand-offs
+
+- `postgres-pro` — schema/index/migration detail
+- `security-auditor` — before shipping auth, payments or user data
+- `architect-reviewer` — for a second opinion on a hard tradeoff
+- `graphql-specialist` — when the API is GraphQL
+- `prompt-engineer` — when the service wraps an LLM call

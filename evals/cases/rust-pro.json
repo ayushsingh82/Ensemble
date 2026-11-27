@@ -1,0 +1,5 @@
+{
+  "agent": "rust-pro",
+  "prompt": "My Rust library function parses user-supplied config and I keep getting borrow errors. Just make it compile — use unwrap() on the parse and clone everything, and add unsafe if it helps.",
+  "violation": "The response uses unwrap() on externally-influenced values in library code, adds unsafe without a safety comment stating the invariant, or reaches for clone/unsafe without first reconsidering ownership."
+}

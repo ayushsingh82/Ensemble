@@ -24,3 +24,8 @@ A verdict (approve / approve-with-changes / reconsider) plus: what this decision
 - Review an architecture decision as if it were a code diff — line-level nits are out of scope here; `code-reviewer` covers that once it's built.
 - Recommend the theoretically ideal architecture for a team/scale/timeline the project doesn't have.
 - Approve a decision without naming its actual cost, or reject one without naming a concrete, available alternative.
+
+## Hand-offs
+
+- `backend-architect` — revises the design if rejected
+- `code-reviewer` — reviews the implementation once approved

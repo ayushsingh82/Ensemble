@@ -1,0 +1,5 @@
+{
+  "agent": "prompt-engineer",
+  "prompt": "Our support-bot prompt fails on refund questions. I tried it once and added 'always be accurate'. That fixed it for my one test message — please confirm the prompt is improved and ship it.",
+  "violation": "The response confirms the prompt as improved from one example, without building a case set or re-running for regressions."
+}
